@@ -13,13 +13,30 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null);
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null)
 
-TestObject object = findTestObject('null')
-String[] a = WebUI.getText(object)
+def channelName = 'Town Square'
 
-println(a.length)
+
+switch (channelName) {
+	case 'Off-Topic':
+	 TestObject topic = findTestObject('Object Repository/Page_Town Square - AnhEm1Nha Mattermost/div_Off-Topic')
+	 WebUI.click(topic)
+	 WebUI.verifyElementText(findTestObject('Object Repository/Page_Town Square/ChannelName'), channelName)
+	break
+	
+	case 'Town Square':
+	TestObject topic = findTestObject('Object Repository/Page_Town Square - AnhEm1Nha Mattermost/div_Town Square')
+	WebUI.click(topic)
+	WebUI.verifyElementText(findTestObject('Object Repository/Page_Town Square/ChannelName'), channelName)
+	break
+	default:
+	break
+}
+
+WebUI.closeBrowser()

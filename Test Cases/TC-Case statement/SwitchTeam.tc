@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CreateChannel</name>
+   <name>SwitchTeam</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e2f9959a-eb7f-4950-8671-36ebf4b223bb</testCaseGuid>

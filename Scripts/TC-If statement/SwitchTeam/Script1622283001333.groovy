@@ -17,13 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null);
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
-
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
-
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
-
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
-
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Town Square/workspaceView'), 1)) {
+	WebUI.sendKeys(null, Keys.chord(Keys.CONTROL,Keys.ALT,"1"))
+	def nameWordSpace = WebUI.getText(findTestObject('Object Repository/Page_Town Square/nameWorkspace'))
+	def url = WebUI.getUrl()
+	String[] urlSplit = url.toString().split('/');
+	if(urlSplit.find()==nameWordSpace) {
+		WebUI.closeBrowser()
+	}else {
+		printf('not contain url',url,nameWordSpace)
+		WebUI.closeBrowser()
+	}
+}else {
+	WebUI.closeBrowser()
+}

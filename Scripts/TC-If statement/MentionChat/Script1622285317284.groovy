@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null);
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square/textarea_Write to Town Square_post_textbox'), '@')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
-
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
-
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Town Square/div_Channel Membershbsolider123 123(you)tha_bb84c9'), 0)) {
+	WebUI.closeBrowser()
+}else {
+	System.out.print('Error')
+}
 

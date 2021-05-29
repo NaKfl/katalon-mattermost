@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Name_newChannelName</name>
+   <name>textarea_Write to Town Square_post_textbox</name>
    <tag></tag>
-<<<<<<< HEAD
-   <elementGuidId>1c61a50a-2cfb-446b-83d9-b81b9640258c</elementGuidId>
-=======
-   <elementGuidId>a10c6939-a910-4a0f-ab5e-ade12925afd8</elementGuidId>
->>>>>>> 5b06126... if statement
+   <elementGuidId>46204ef4-edf8-43f0-a67a-ee65ef53ceeb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#newChannelName</value>
+         <value>#post_textbox</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='newChannelName']</value>
+         <value>//textarea[@id='post_textbox']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -25,62 +21,97 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>textarea</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>post_textbox</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>newChannelName</value>
+      <value>post_textbox</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>type</name>
+      <name>height</name>
       <type>Main</type>
-      <value>text</value>
+      <value>46</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>off</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control</value>
+      <value>form-control custom-textarea custom-textarea--emoji-picker</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
+      <name>spellcheck</name>
       <type>Main</type>
-      <value>64</value>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>role</name>
       <type>Main</type>
-      <value>E.g.: &quot;Bugs&quot;, &quot;Marketing&quot;, &quot;客户支持&quot;</value>
+      <value>textbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>write to town square</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>dir</name>
+      <type>Main</type>
+      <value>auto</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;newChannelName&quot;)</value>
+      <value>id(&quot;post_textbox&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='newChannelName']</value>
+      <value>//textarea[@id='post_textbox']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='centerChannelFooter']/div/div/div[2]/div/textarea</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div[2]/div/input</value>
+      <value>//textarea</value>
    </webElementXpaths>
 </WebElementEntity>

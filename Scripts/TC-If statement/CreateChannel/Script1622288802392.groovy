@@ -17,13 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+def errorCreateChannel = 'A channel with that name already exists on the same team.'
+def bool = false
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Create-Channel'),['channelName':'123123'])
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
-
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
-
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
-
+if(WebUI.verifyTextPresent(errorCreateChannel, bool)) {
+	printf(errorCreateChannel)
+	WebUI.closeBrowser()
+}else {
+	WebUI.closeBrowser()
+}

@@ -18,11 +18,30 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
-            1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
+	1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
 
-String nickname=findTestData('InternalData/EditAccount').getValue(3, 1);
-
-WebUI.callTestCase(findTestCase('Test Cases/CommonTestCase/TC-Common-EditNickName'), [('nickname') : nickname], FailureHandling.STOP_ON_FAILURE)
+for (def rowNum = 1; rowNum <= findTestData('Data Files/CSV/name').getRowNumbers(); rowNum++) {
+	String name = findTestData('Data Files/CSV/name').getValue(1, rowNum)
+	String firstname = name.split(' ')[0]
+	String lastname = name.split(' ')[1]
+	
+	WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
+	
+	WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
+	
+	WebUI.click(findTestObject('Page_Town Square/Edit/span_EditFullName'))
+	
+	WebUI.setText(findTestObject('Page_Town Square/Edit/input_First Name_firstName'), firstname)
+	
+	WebUI.setText(findTestObject('Page_Town Square/Edit/input_Last Name_lastName'), lastname)
+	
+	WebUI.click(findTestObject('Page_Town Square/Edit/span_SaveFullname'))
+	
+	String fullName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_fullname'))
+	
+	WebUI.verifyMatch(fullName, firstname+ ' '+ lastname,false)
+	
+	WebUI.click(findTestObject('Object Repository/Page_Town Square - AnhEm1Nha Mattermost/button_Close'))
+}
 
 WebUI.closeBrowser()
-

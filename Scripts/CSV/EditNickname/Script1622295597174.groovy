@@ -18,11 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
-            1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
+	1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
 
-String nickname=findTestData('InternalData/EditAccount').getValue(3, 1);
-
-WebUI.callTestCase(findTestCase('Test Cases/CommonTestCase/TC-Common-EditNickName'), [('nickname') : nickname], FailureHandling.STOP_ON_FAILURE)
+for (def rowNum = 1; rowNum <= findTestData('Data Files/CSV/nickname').getRowNumbers(); rowNum++) {
+	String nickname = findTestData('Data Files/CSV/nickname').getValue(1, rowNum)
+	
+	WebUI.callTestCase(findTestCase('Test Cases/CommonTestCase/TC-Common-EditNickName'), [('nickname') :nickname], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.click(findTestObject('Object Repository/Page_Town Square - AnhEm1Nha Mattermost/button_Close'))
+}
 
 WebUI.closeBrowser()
-

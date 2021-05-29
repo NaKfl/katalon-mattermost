@@ -20,17 +20,9 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
             1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
+String username=findTestData('InternalData/EditAccount').getValue(2, 1)
 
-WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
+WebUI.callTestCase(findTestCase('Test Cases/CommonTestCase/TC-Common-EditUsername'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_UsernameEdit'))
-
-WebUI.setText(findTestObject('Page_Town Square/Edit/input_edit_username'), findTestData('InternalData/EditAccount').getValue(2, 1))
-
-WebUI.click(findTestObject('Page_Town Square/Edit/save_username'))
-
-String userName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_display_username'))
-WebUI.verifyMatch(userName, findTestData('InternalData/EditAccount').getValue(2, 1), false)
 WebUI.closeBrowser()
 

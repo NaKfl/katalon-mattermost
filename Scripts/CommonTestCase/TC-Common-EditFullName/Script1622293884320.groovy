@@ -17,12 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
-            1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
 
-String nickname=findTestData('InternalData/EditAccount').getValue(3, 1);
+WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
 
-WebUI.callTestCase(findTestCase('Test Cases/CommonTestCase/TC-Common-EditNickName'), [('nickname') : nickname], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Town Square/Edit/span_EditFullName'))
 
-WebUI.closeBrowser()
+WebUI.setText(findTestObject('Page_Town Square/Edit/input_First Name_firstName'), firstname)
 
+WebUI.setText(findTestObject('Page_Town Square/Edit/input_Last Name_lastName'), lastname)
+
+WebUI.click(findTestObject('Page_Town Square/Edit/span_SaveFullname'))
+
+String fullName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_fullname'))
+
+WebUI.verifyMatch(fullName, firstname+ ' '+ lastname,false)

@@ -17,12 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
-            1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
 
-String nickname=findTestData('InternalData/EditAccount').getValue(3, 1);
+WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
 
-WebUI.callTestCase(findTestCase('Test Cases/CommonTestCase/TC-Common-EditNickName'), [('nickname') : nickname], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Town Square/Edit/div_PositionEditClick Edit to add your job title  position'))
 
-WebUI.closeBrowser()
+WebUI.setText(findTestObject('Page_Town Square/Edit/input_edit_position'), position)
 
+WebUI.click(findTestObject('Page_Town Square/Edit/save_position'))
+
+String position = WebUI.getText(findTestObject('Page_Town Square/Edit/div_display_position'))
+
+WebUI.verifyMatch(position, position, false)

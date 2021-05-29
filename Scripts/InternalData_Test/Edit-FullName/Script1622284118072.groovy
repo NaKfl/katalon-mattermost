@@ -20,18 +20,11 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
             1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
+String firstname=findTestData('InternalData/EditAccount').getValue(1, 1);
 
-WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
+String lastname=findTestData('InternalData/EditAccount').getValue(6, 1);
 
-WebUI.click(findTestObject('Page_Town Square/Edit/span_EditFullName'))
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-EditFullName'), [('firstname') : firstname, ('lastname') : lastname], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Town Square/Edit/input_First Name_firstName'), findTestData('InternalData/EditAccount').getValue(1, 1))
-WebUI.setText(findTestObject('Page_Town Square/Edit/input_Last Name_lastName'), findTestData('InternalData/EditAccount').getValue(6, 1))
-
-WebUI.click(findTestObject('Page_Town Square/Edit/span_SaveFullname'))
-
-String fullName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_fullname'))
-WebUI.verifyMatch(fullName, findTestData('InternalData/EditAccount').getValue(7, 1), false)
 WebUI.closeBrowser()
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC03-Login-InvalidUsername</name>
+   <name>GetMe</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c21affa7-03a2-406b-ac05-033e613e3593</testCaseGuid>
+   <testCaseGuid>3831cdbc-b772-4c2d-a106-73c572afb969</testCaseGuid>
 </TestCaseEntity>

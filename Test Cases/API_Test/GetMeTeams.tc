@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC05-Login-Success</name>
+   <name>GetMeTeams</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>24dc0289-0a20-41f2-9e30-ed627529dc21</testCaseGuid>
+   <testCaseGuid>801852cb-4bb6-4731-a085-e651f97889f4</testCaseGuid>
 </TestCaseEntity>

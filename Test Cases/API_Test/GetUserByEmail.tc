@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC02-Login-EmptyUsername</name>
+   <name>GetUserByEmail</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>74bbc117-7631-4991-950e-940d038c19b3</testCaseGuid>
+   <testCaseGuid>0e6afa3c-b43f-4f01-aac0-ccd7a6e4cddf</testCaseGuid>
 </TestCaseEntity>

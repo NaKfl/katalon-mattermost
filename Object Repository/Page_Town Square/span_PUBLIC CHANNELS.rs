@@ -6,12 +6,12 @@
    <elementGuidId>45aef14b-0156-4b9c-9855-56207692c634</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#publicChannel > span</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//h4[@id='publicChannel']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#publicChannel > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

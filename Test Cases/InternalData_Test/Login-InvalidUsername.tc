@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC04-Login-InvalidPassword</name>
+   <name>Login-InvalidUsername</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>245a4d92-949c-4336-8631-4e2a25e726f9</testCaseGuid>
+   <testCaseGuid>c21affa7-03a2-406b-ac05-033e613e3593</testCaseGuid>
 </TestCaseEntity>

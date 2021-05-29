@@ -17,16 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
+WebUI.navigateToUrl('http://192.168.46.108:8065/reset_password')
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_UsernameEdit'))
+WebUI.waitForPageLoad(3)
 
-WebUI.setText(findTestObject('Page_Town Square/Edit/input_edit_username'), username)
+Boolean isExisted = WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Mattermost/span_To reset your password, enter the emai_655384'), 20)
 
-WebUI.click(findTestObject('Page_Town Square/Edit/save_username'))
+if(isExisted != true) {
+	KeywordUtil.markFailed(findTestObject('Object Repository/Page_Mattermost/span_To reset your password, enter the emai_655384') + "does not exsit")
+}
 
-String newUserName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_display_username'))
-
-WebUI.verifyMatch(newUserName, username, false)
+WebUI.closeBrowser()

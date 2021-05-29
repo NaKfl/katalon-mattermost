@@ -27,6 +27,6 @@ WebUI.setText(findTestObject('Page_Town Square/Edit/input_edit_position'), posit
 
 WebUI.click(findTestObject('Page_Town Square/Edit/save_position'))
 
-String position = WebUI.getText(findTestObject('Page_Town Square/Edit/div_display_position'))
+String newPosition = WebUI.getText(findTestObject('Page_Town Square/Edit/div_display_position'))
 
-WebUI.verifyMatch(position, position, false)
+WebUI.verifyMatch(newPosition, position, false)

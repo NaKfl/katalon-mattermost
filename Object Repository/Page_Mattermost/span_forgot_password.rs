@@ -7,16 +7,16 @@
    <imagePath>Screenshots/Targets/Page_Mattermost/span_forgot_password.png</imagePath>
    <selectorCollection>
       <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Mattermost/span_forgot_password.png</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>a > span</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='login_forgot']/a/span</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-         <value>Screenshots/Targets/Page_Mattermost/span_forgot_password.png</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

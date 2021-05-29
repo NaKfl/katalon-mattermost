@@ -17,16 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
+WebUI.navigateToUrl('http://192.168.46.108:8065/login')
 
-WebUI.click(findTestObject('Page_Town Square/Edit/div_UsernameEdit'))
+WebUI.waitForPageLoad(3)
 
-WebUI.setText(findTestObject('Page_Town Square/Edit/input_edit_username'), username)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Mattermost/button_Sign in'), 20)
 
-WebUI.click(findTestObject('Page_Town Square/Edit/save_username'))
+String signin = WebUI.getText(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
 
-String newUserName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_display_username'))
+String defaulSignin ='Sign in'
 
-WebUI.verifyMatch(newUserName, username, false)
+WebUI.verifyMatch(signin, defaulSignin, false)
+
+WebUI.closeBrowser()

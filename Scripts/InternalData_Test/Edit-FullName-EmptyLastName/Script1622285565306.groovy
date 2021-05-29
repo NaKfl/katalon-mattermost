@@ -17,12 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
+            1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), username)
+WebUI.click(findTestObject('Page_Town Square/Edit/button_Account Settings'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), password)
+WebUI.click(findTestObject('Page_Town Square/Edit/span_EditFullName'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+WebUI.setText(findTestObject('Page_Town Square/Edit/input_First Name_firstName'), findTestData('InternalData/EditAccount').getValue(1, 6))
+WebUI.setText(findTestObject('Page_Town Square/Edit/input_Last Name_lastName'), findTestData('InternalData/EditAccount').getValue(6, 6))
+
+WebUI.click(findTestObject('Page_Town Square/Edit/span_SaveFullname'))
+
+String fullName = WebUI.getText(findTestObject('Page_Town Square/Edit/div_fullname'))
+WebUI.verifyMatch(fullName, findTestData('InternalData/EditAccount').getValue(7, 6), false)
+WebUI.closeBrowser()
+

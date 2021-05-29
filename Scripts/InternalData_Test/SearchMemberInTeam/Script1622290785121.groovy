@@ -17,12 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), [('username') : findTestData('InternalData/Login').getValue(
+            1, 4), ('password') : findTestData('InternalData/Login').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+WebUI.click(findTestObject('Page_Town Square/Edit/div_path'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), username)
+WebUI.click(findTestObject('Object Repository/Page_Town Square/Edit/span_view_member'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), password)
+WebUI.setText(findTestObject('Object Repository/Page_Town Square/Edit/input_SearchMembers'), findTestData('InternalData/EditAccount').getValue(5, 1))
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+String email = WebUI.getText(findTestObject('Object Repository/Page_Town Square/Edit/div_display_membermail'))
+WebUI.verifyMatch(email, findTestData('InternalData/EditAccount').getValue(5, 1), false)
+WebUI.closeBrowser()
+

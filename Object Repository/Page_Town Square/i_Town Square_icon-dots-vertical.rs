@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Town Square_icon-dots-vertical</name>
+   <tag></tag>
+   <elementGuidId>a9de137b-dc76-498f-8b8f-5bf30e5c9ed6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#sidebarItem_town-square > div.MenuWrapper.SidebarMenu > button.SidebarMenu_menuButton > i.icon-dots-vertical</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='sidebarItem_town-square']/div[2]/button/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>icon-dots-vertical</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;sidebarItem_town-square&quot;)/div[@class=&quot;MenuWrapper SidebarMenu&quot;]/button[@class=&quot;SidebarMenu_menuButton&quot;]/i[@class=&quot;icon-dots-vertical&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//a[@id='sidebarItem_town-square']/div[2]/button/i</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a/div[2]/button/i</value>
+   </webElementXpaths>
+</WebElementEntity>

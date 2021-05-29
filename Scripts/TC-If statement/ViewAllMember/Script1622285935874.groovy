@@ -17,13 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null);
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+def memberCount = WebUI.getText(findTestObject('Object Repository/Page_Town Square/span_1'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
+WebUI.click(findTestObject('Object Repository/Page_Town Square/svg'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
+WebUI.click(findTestObject('Object Repository/Page_Town Square/span_Manage Members'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+def memberCountInManage = WebUI.getText(findTestObject('Object Repository/Page_Town Square/span_1 - 1 member of 1 total')).toString().split(' ')
+
+if(memberCountInManage.find()==memberCount) {
+	WebUI.closeBrowser()
+}
 

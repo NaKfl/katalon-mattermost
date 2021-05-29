@@ -17,13 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null);
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+TestObject object = findTestObject('null')
+String[] a = WebUI.getText(object)
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
-
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
-
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
-
+println(a.length)

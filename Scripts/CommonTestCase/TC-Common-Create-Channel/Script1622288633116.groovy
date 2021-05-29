@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('CommonTestCase/TC-Common-Login'), null)
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+WebUI.click(findTestObject('Object Repository/Page_Town Square/i_CtrlK_icon-plus'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
+WebUI.click(findTestObject('Object Repository/Page_Town Square/span_Create New Channel'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square/input_Name_newChannelName'), channelName)
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square/span_Create Channel'))
 

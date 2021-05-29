@@ -19,11 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://192.168.46.108:8065/')
+WebUI.navigateToUrl('https://mattermost-ae1n.herokuapp.com/')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_username'), 'hbsolider')
+WebUI.setText(findTestObject('Object Repository/Page_Town Square/input_All team communication in one place, _dcc84b'), 'hoaibao@gmail.com')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mattermost/input_password'), '123123')
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Town Square/input_All team communication in one place, _a3edc6'), 
+    '1f136dOrv8A=')
 
-WebUI.click(findTestObject('Object Repository/Page_Mattermost/button_Sign in'))
+WebUI.click(findTestObject('Object Repository/Page_Town Square/button_Sign in'))
+
+if(WebUI.verifyTextPresent('Enter a valid email or username and/or password.', false, FailureHandling.STOP_ON_FAILURE)) {
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Town Square/label_Enter a valid email or username andor_ef8acb'), 0)
+}else {
+	WebUI.closeBrowser()
+}
 

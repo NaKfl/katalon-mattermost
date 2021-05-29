@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Sidebar</name>
+   <tag></tag>
+   <elementGuidId>e17b0f5f-bf12-4375-9fb5-9ba07fd00e8c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'PUBLIC CHANNELS+1111111111111111111111111111111231231231231231231232131231231231Off-TopicTown SquareMore...PRIVATE CHANNELS+DIRECT MESSAGES+hbsolider (you)×thaianh123d×More...' or . = 'PUBLIC CHANNELS+1111111111111111111111111111111231231231231231231232131231231231Off-TopicTown SquareMore...PRIVATE CHANNELS+DIRECT MESSAGES+hbsolider (you)×thaianh123d×More...')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.scrollbar--view</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='lhsList']/div[3]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>scrollbar--view</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PUBLIC CHANNELS+1111111111111111111111111111111231231231231231231232131231231231Off-TopicTown SquareMore...PRIVATE CHANNELS+DIRECT MESSAGES+hbsolider (you)×thaianh123d×More...</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lhsList&quot;)/div[3]/div[@class=&quot;scrollbar--view&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lhsList']/div[3]/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='More Unreads'])[2]/following::div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='More Unreads'])[1]/following::div[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[3]/div[3]/div</value>
+   </webElementXpaths>
+</WebElementEntity>

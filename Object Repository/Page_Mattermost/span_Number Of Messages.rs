@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Sign in</name>
+   <name>span_Number Of Messages</name>
    <tag></tag>
-   <elementGuidId>fe1cb376-87cf-46b3-adc5-fc35beb97eed</elementGuidId>
+   <elementGuidId>7cd5b315-9a9e-47e1-a250-cab7a820aadb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#loginButton > span</value>
+         <value>span.counter</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='loginButton']/span</value>
+         <value>//div[@id='searchContainer']/div[2]/div/button/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,66 +24,73 @@
       <value>span</value>
    </webElementProperties>
    <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>counter</value>
+   </webElementProperties>
+   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Sign in</value>
+      <value>1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;loginButton&quot;)/span[1]</value>
+      <value>id(&quot;searchContainer&quot;)/div[@class=&quot;MessagesOrFilesSelector&quot;]/div[@class=&quot;buttons-container&quot;]/button[@class=&quot;active tab messages-tab&quot;]/span[@class=&quot;counter&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='loginButton']/span</value>
+      <value>//div[@id='searchContainer']/div[2]/div/button/span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All team communication in one place, searchable and accessible anywhere'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Messages'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mattermost'])[2]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search Results'])[1]/following::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Don', &quot;'&quot;, 't have an account?')])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Files'])[1]/preceding::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create one now.'])[1]/preceding::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Today'])[1]/preceding::span[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Sign in']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='1']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button/span</value>
+      <value>//span[2]</value>
    </webElementXpaths>
 </WebElementEntity>

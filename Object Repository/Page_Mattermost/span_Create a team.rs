@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Sign in</name>
+   <name>span_Create a team</name>
    <tag></tag>
-   <elementGuidId>fe1cb376-87cf-46b3-adc5-fc35beb97eed</elementGuidId>
+   <elementGuidId>2e51412f-9657-4d4e-84aa-9c2b59164b81</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#loginButton > span</value>
+         <value>#createNewTeamLink > span</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='loginButton']/span</value>
+         <value>//a[@id='createNewTeamLink']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,62 +28,62 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Sign in</value>
+      <value>Create a team</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;loginButton&quot;)/span[1]</value>
+      <value>id(&quot;createNewTeamLink&quot;)/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='loginButton']/span</value>
+      <value>//a[@id='createNewTeamLink']/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All team communication in one place, searchable and accessible anywhere'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Team 9bd12a2'])[1]/following::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mattermost'])[2]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Other Team 7e3f917'])[1]/following::span[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Don', &quot;'&quot;, 't have an account?')])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Go to System Console'])[1]/preceding::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create one now.'])[1]/preceding::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mattermost'])[2]/preceding::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Sign in']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='Create a team']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button/span</value>
+      <value>//div[2]/a/span</value>
    </webElementXpaths>
 </WebElementEntity>

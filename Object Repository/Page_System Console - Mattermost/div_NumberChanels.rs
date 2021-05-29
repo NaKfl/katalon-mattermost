@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Sign in</name>
+   <name>div_NumberChanels</name>
    <tag></tag>
-   <elementGuidId>fe1cb376-87cf-46b3-adc5-fc35beb97eed</elementGuidId>
+   <elementGuidId>580248b8-b88d-4093-95f3-dc21b8f88eea</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#loginButton > span</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='loginButton']/span</value>
+         <value>//div[@id='adminConsoleWrapper']/div[3]/div/div/div[2]/div/div/div/div[3]/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,69 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>totalChannels</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>content</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Sign in</value>
+      <value>71</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;loginButton&quot;)/span[1]</value>
+      <value>id(&quot;adminConsoleWrapper&quot;)/div[@class=&quot;admin-console&quot;]/div[1]/div[@class=&quot;wrapper--fixed team_statistics&quot;]/div[@class=&quot;admin-console__wrapper&quot;]/div[@class=&quot;admin-console__content&quot;]/div[@class=&quot;row&quot;]/div[1]/div[@class=&quot;col-lg-3 col-md-4 col-sm-6&quot;]/div[@class=&quot;total-count&quot;]/div[@class=&quot;content&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='loginButton']/span</value>
+      <value>//div[@id='adminConsoleWrapper']/div[3]/div/div/div[2]/div/div/div/div[3]/div/div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All team communication in one place, searchable and accessible anywhere'])[1]/following::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Channels'])[1]/following::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mattermost'])[2]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Teams'])[1]/following::div[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Don', &quot;'&quot;, 't have an account?')])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Posts'])[1]/preceding::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Create one now.'])[1]/preceding::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Daily Active Users'])[1]/preceding::div[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Sign in']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='71']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button/span</value>
+      <value>//div[3]/div/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>
